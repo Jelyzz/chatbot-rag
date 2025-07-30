@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot RAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📂 Chatbot RAG</h2>
+
+    <!-- File Upload -->
+    <div class="upload-section">
+        <input type="file" id="fileInput" class="input-file" multiple accept=".pdf,.docx,.png,.jpg,.jpeg">
+        <button onclick="uploadFiles()" class="btn">Upload File(s)</button>
+        <div class="spinner" id="spinnerFile"></div>
+        <div class="message" id="fileMessage"></div>
+    </div>
+
+    <!-- URL Upload -->
+    <div class="upload-section">
+        <input type="text" id="urlInput" placeholder="Enter website URL" class="input-text">
+        <button onclick="uploadURL()" class="btn">Upload URL</button>
+
+        <div class="spinner" id="spinnerURL"></div>
+        <div class="message" id="urlMessage"></div>
+    </div>
+
+    <!-- Ask Question -->
+    <div class="upload-section">
+        <input type="text" id="questionInput" placeholder="Enter your question" class="input-text">
+        <button onclick="askQuestion()" class="btn">Ask</button>
+        <div class="spinner" id="spinnerAsk"></div>
+        <div class="message" id="askMessage"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
